@@ -19,8 +19,10 @@ class App extends React.Component {
 	render() { 
     return (
       <div className="App">
+        <h1>Markdown Previewer</h1>
+
         
-        <div id="edit">
+        <div id="edit" title="Enter your raw markdown here :)">
           <h4>[Logo] Editor</h4>
           <textarea
             id="editor"
@@ -32,11 +34,15 @@ class App extends React.Component {
         </div>
         
 
-        <div id="preview">
+        <div id="preview" title="Voila! He is yo markdown dawg">
           <h4>Previewer</h4>
           <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-          <p id="content">{marked('this.state.userInput')}</p>
+          <p>{this.state.userInput}</p>
         </div>
+
+        <footer>
+          <p class="copyright">Tory Moscaritolo &#169;</p>
+        </footer>
 
       </div>
     );

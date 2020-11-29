@@ -8,28 +8,21 @@ h1, h4 {
     text-align: center;
 }
 
-/* Editor */
-#edit {
-    margin: 30px auto;
-    width: 506px;
-    box-shadow:0px 0px 4px 1px black;
-    width: 40%;
-}
-
 h4 {
     background-color: rgba(226, 77, 147, 0.897);
-    margin: 0;
+    margin: auto;
+    padding-top: 3px;
     font-weight: bold;
     height: 1.3rem;
     border: 1px solid black;
 }
 
-p {
-    margin: 0;
-    font-weight: normal;
-    background-color: rgba(221, 139, 177, 0.511);
-    height: 90%;
-    width: 100%;
+/* Editor Box */
+#edit {
+    margin: 30px auto;
+    width: 506px;
+    box-shadow:0px 0px 4px 1px black;
+    width: 40%;
 }
 
 textarea {
@@ -39,6 +32,7 @@ textarea {
     background-color: rgba(221, 139, 177, 0.511);
 }
 
+/* Previewer Box */
 #preview {
     width: 95%;
     min-height: 300px;
@@ -49,4 +43,39 @@ textarea {
     background-color: rgba(221, 139, 177, 0.511);
     word-wrap: break-word;
     overflow: scroll;
+}
+
+p {
+    margin: 0;
+    font-weight: normal;
+    padding: 7px 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 2rem;
+    width: 100%;
+}
+
+.copyright {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+/*************************/
+/* Media Queries - Adjusts Editor Box to user friendly size */
+@media only screen and (max-width: 1000px) {
+    #edit {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #edit {
+        width: 85%;
+    }
 }
