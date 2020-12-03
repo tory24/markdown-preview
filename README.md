@@ -10,4 +10,4 @@ I also used Marked.js Library to parse the text.
 [Marked.js](https://marked.js.org/)
 
 
-[Gif Preview](public/previewer.gif)
+![Gif Preview](public/previewer.gif)
