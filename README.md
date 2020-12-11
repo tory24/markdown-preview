@@ -11,8 +11,8 @@ The primary aim was to use React or any other front end libraries I have learnt 
 
 I primarily used React.js, Redux and CSS.
 
-I also used Marked.js Library to parse the text.
-[Marked.js](https://marked.js.org/)
+I also used [Marked.js](https://marked.js.org/) Library to parse the text.
+
 
 #### Preview
 
